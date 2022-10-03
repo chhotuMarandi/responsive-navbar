@@ -44,3 +44,23 @@ i {
   align-items: center;
   gap: 1rem;
 }
+
+.icons .menu-bar {
+  visibility: hidden;
+}
+
+/* responsive for 900px */
+
+@media (max-width: 900px) {
+  .icons .social-handle,
+  .navbar-list li {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 999;
+  }
+
+  .icons .menu-bar {
+    visibility: visible;
+  }
+}
