@@ -6,6 +6,15 @@
 
 /* reuseable code */
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
 i {
   font-size: 2rem;
 }
@@ -14,12 +23,22 @@ i {
 
 .container {
   margin: 0 auto;
-  /* background-color: aqua; */
   padding: 1rem 2rem;
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+/* default toggle button hidden */
+
+.toggle-btn {
+  visibility: hidden;
+}
+
+.header-part {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar .navbar-list {
@@ -31,6 +50,14 @@ i {
 .navbar li {
   list-style: none;
   padding: 1rem 1rem;
+}
+
+.link-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+
 }
 
 .navbar a {
@@ -54,11 +81,15 @@ i {
 
 @media (max-width: 900px) {
 
-  .header {
+  /* .header-part {;
+    margin: 0;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-  }
+  } */
+
+  /* .toggle-btn {
+  visibility: visible;
+} */
   
   .icons .social-handle {
     visibility: hidden;
