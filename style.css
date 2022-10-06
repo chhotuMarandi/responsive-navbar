@@ -38,29 +38,47 @@ i {
   text-transform: capitalize;
 }
 
-.social-handle {
+/* .icons .social-handle {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
-}
+} */
 
-.icons .menu-bar {
+/* .icons .menu-bar {
   visibility: hidden;
-}
+} */
 
 /* responsive for 900px */
 
 @media (max-width: 900px) {
-  .icons .social-handle,
-  .navbar-list li {
+  .header-section {
+    display: flex;
+  }
+  .icons .social-handle {
     visibility: hidden;
     pointer-events: none;
     opacity: 0;
     z-index: 999;
   }
 
-  .icons .menu-bar {
+  .link li{
+    visibility: hidden;
+  }
+
+  /* .icons .menu-bar {
     visibility: visible;
   }
-}
+
+  .navbar {
+    left: 0;
+    top: 0;
+  }
+
+  .navbar .navbar-list {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* align-items: center; */
+  } */
+} 
