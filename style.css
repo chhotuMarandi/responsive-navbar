@@ -13,9 +13,10 @@ i {
 /* container */
 
 .container {
+  margin: 0 auto;
   /* background-color: aqua; */
   padding: 1rem 2rem;
-  width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,9 +53,13 @@ i {
 /* responsive for 900px */
 
 @media (max-width: 900px) {
-  .header-section {
+
+  .header {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
+  
   .icons .social-handle {
     visibility: hidden;
     pointer-events: none;
@@ -63,6 +68,11 @@ i {
   }
 
   .link li{
+    display: none;
+    visibility: hidden;
+  }
+  .icons i {
+    display: none;
     visibility: hidden;
   }
 
