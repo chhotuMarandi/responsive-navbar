@@ -6,7 +6,7 @@ console.log(linkSection);
 
 const toggleFunction = () => {
   
-linkSection.remove();
+linkSection.classList.toggle("show-links");
 
 
   

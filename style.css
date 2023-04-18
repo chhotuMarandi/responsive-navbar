@@ -55,6 +55,15 @@ nav {
   gap: 1rem;
 }
 
+.link {
+  height: 0;
+  overflow: hidden;
+}
+
+.show-links {
+  height: 11.75rem;
+}
+
 /* responsive for 900px */
 
 @media (max-width: 900px) {
