@@ -60,16 +60,21 @@ nav {
   overflow: hidden;
 }
 
+
 .show-links {
-  height: 11.75rem;
+  height: 14rem;
 }
 
 /* responsive for 900px */
+
 
 @media (max-width: 900px) {
   .container {
     display: block;
   }
+
+
+
   .header-part {
     width: 100%;
     display: flex;
@@ -102,12 +107,12 @@ nav {
     padding: 0;
   }
 
-  /* .link li {
-    display: none;
-    visibility: hidden;
-  } */
+
   .icons i {
     display: none;
     visibility: hidden;
   }
+
+
+
 }
